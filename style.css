@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&display=swap');
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif;
+}
+body
+{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+	background: #060a1f;
+}
+.wrapper h2
+{
+	position: relative;
+	display: block;
+	color: #fff;
+	text-align: center;
+    margin: 40px 0;
+	font-weight: 700;
+	text-transform: uppercase;
+	letter-spacing: 0.4em;
+	font-size: 4em;
+}
+.wrapper .time
+{
+	display: flex;
+}
+.wrapper .time div
+{
+	position: relative;
+	margin: 0 5px;
+	-webkit-box-reflect: below 1px linear-gradient(transparent,#0004);
+}
+
+.wrapper .time  div span
+{
+	position: relative;
+	display: block;
+	width: 100px;
+	height: 80px;
+	background: #2196f3;
+	color: #fff;
+	font-weight: 300;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 3em;
+	z-index: 10;
+	box-shadow: 0 0 0 1px rgba(0,0,0,.2);
+}
+
+.wrapper .time div span:nth-child(2)
+{
+	height: 30px;
+	font-size: 0.7em;
+	letter-spacing: 0.2em;
+	font-weight: 500;
+	z-index: 9;
+	box-shadow: none;
+	background: #127fd6;
+	text-transform: uppercase;
+}
+
+.wrapper .time div:nth-last-child(1) span
+{
+	background: #ff006a;
+}
+.wrapper .time div:nth-last-child(3) span
+{
+	background: #ff006a;
+}
+
+
+.wrapper {
+  user-select: none;
+}
+
+.wrapper .time {
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 6px;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.09);
+  padding: 100 10px;
+}
+
+.wrapper .time span {
+  width: 100px;
+  text-align: center;
+  font-size: 50px;
+  font-weight: 500;
+  color: #333;
+}
+
+.time span.colon {
+  width: 10px;
+}
+
+.wrapper .buttons {
+  text-align: center;
+  margin-top: -200px;
+}
+
+
+.buttons button {
+  padding: 6px 16px;
+  outline: none;
+  border: none;
+  margin: 10 5px;
+  color: #7d2ae8;
+  background: #fff;
+  font-size: 19px;
+  font-weight: 500;
+  border-radius: 4px;
+  cursor: pointer;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.09);
+}
